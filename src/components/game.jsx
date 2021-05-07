@@ -1,5 +1,6 @@
 import React from 'react';
 import Board from './board';
+import Button from '@material-ui/core/Button';
 
 function calculateWinner(squares) {
     const lines = [
@@ -69,7 +70,7 @@ function calculateWinner(squares) {
           'Go to game start.';
           return (
             <li key={move}>
-              <button onClick={() => this.jumpTo(move)}>{desc}</button>
+              <Button variant="outlined" onClick={() => this.jumpTo(move)}>{desc}</Button>
             </li>
           )
       });
