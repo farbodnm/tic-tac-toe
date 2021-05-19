@@ -4,7 +4,7 @@
 * [Technologies](#technologies)
 
 ## General info
-Simple Tic-Tac-Toe game with react.
+Simple Tic-Tac-Toe game.\
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Setup
