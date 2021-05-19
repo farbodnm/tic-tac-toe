@@ -1,14 +1,33 @@
 import React from 'react';
 import Square from './square';
+import O from './svgs/o.jsx';
+import X from './svgs/x.jsx';
 
 class Board extends React.Component {
     renderSquare(i) {
-      return (
-        <Square
-          value={this.props.squares[i]}
-          onClick={() => this.props.onClick(i)}
-        />
-      );
+      switch (this.props.squares[i]) {
+        case 'O':
+          return (
+            <Square
+              value={<O />}
+              onClick={() => this.props.onClick(i)}
+            />
+          )
+        case 'X':
+          return (
+            <Square
+              value={<X />}
+              onClick={() => this.props.onClick(i)}
+            />
+          )
+        default:
+          return (
+            <Square
+              value={this.props.squares[i]}
+              onClick={() => this.props.onClick(i)}
+            />
+          );
+      }
     }
   
     render() {
