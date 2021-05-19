@@ -1,12 +1,16 @@
 body {
     font: 20px "roboto", Futura, sans-serif;
     margin: 20px;
-  }
+  } 
   
   ol, ul {
     padding-left: 0;
     list-style-type: none;
     vertical-align: middle;
+  }
+
+  li {
+    margin-bottom: 5px;
   }
 
   .board {
@@ -53,9 +57,11 @@ body {
     display: flex;
     flex-direction: row;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
   }
 
   .game-board {
@@ -63,6 +69,7 @@ body {
   }
   
   .game-info {
+    align-self: center;
     margin-left: 20px;
   }
 
@@ -77,14 +84,14 @@ body {
     }
 
   @media only screen and (max-width: 850px) {
-    .game-board {
+    .game {
       margin-top: auto;
     }
 
     ol, ul {
       text-align: center;
     }
-
+    
     .status {
       text-align: center;
       font-size: 20px;
@@ -92,8 +99,8 @@ body {
 
     .game {
       flex-direction: column;
-      top: 10%;
-      transform: translate(-50%, 0%);
+      top: 25%;
+      justify-content: unset;
     }
 
     .game-info {

@@ -86,6 +86,7 @@ class Game extends React.Component {
         return (
           <li key={move}>
             <Button
+              className="historyButton"
               variant="outlined"
               onClick={() => this.jumpTo(move)}
             >

@@ -6,21 +6,15 @@ const useStyles = makeStyles({
     height: '64px',
     fontweight: 'bold',
     borderColor: '#12121266',
-    maxwidth: '90px',
-    maxHeight: '90px',
-    minWidth: '90px',
-    minHeight: '90px',
-    '@media(max-Width: 550px)' : {
-      maxwidth: '70px',
-      maxHeight: '70px',
-      minWidth: '70px',
-      minHeight: '70px'
-    },
-    '@media(max-Width: 420px)' : {
-      maxwidth: '50px',
-      maxHeight: '50px',
-      minWidth: '50px',
-      minHeight: '50px'
+    maxwidth: '100px',
+    maxHeight: '100px',
+    minWidth: '100px',
+    minHeight: '100px',
+    '@media(max-Width: 320px)' : {
+      maxwidth: '90px',
+      maxHeight: '90px',
+      minWidth: '90px',
+      minHeight: '90px'
     },
     '&:hover' : {
       borderColor: '#121212cc',
